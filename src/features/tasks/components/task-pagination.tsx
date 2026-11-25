@@ -1,0 +1,3 @@
+import { TASK_PAGE_SIZE } from "@/features/tasks/hooks/use-task-management";
+import { Pagination } from "@/components/ui/pagination";
+export function TaskPagination({ page, pageCount, total, onPageChange }: { page: number; pageCount: number; total: number; onPageChange: (page: number) => void }) { return <div className="flex flex-col gap-3 border-t border-[#e7ebee] px-5 py-4 text-[10px] text-[#667486] sm:flex-row sm:items-center"><span>{total ? `${(page - 1) * TASK_PAGE_SIZE + 1}–${Math.min(page * TASK_PAGE_SIZE, total)} sur ${total} tâches` : "0 tâche"}</span><div className="ml-auto"><Pagination page={page} pageCount={pageCount} onPageChange={onPageChange} /></div></div>; }

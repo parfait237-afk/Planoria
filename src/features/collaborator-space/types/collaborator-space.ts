@@ -1,0 +1,4 @@
+export type CollaboratorTaskStatus = "todo" | "in_progress" | "paused" | "blocked" | "completed" | "validated";
+export type CollaboratorTask = { id:string; title:string; instructions:string; projectName:string; category:string; priority:"urgent"|"normal"|"low"; status:CollaboratorTaskStatus; plannedDate:string; dueDate:string; dueTime:string|null; startTime:string|null; endTime:string|null; correctionReason:string|null; checklist:Array<{id:string;label:string;completed:boolean}>; comments:Array<{id:string;body:string;author:string;createdAt:string}> };
+export type CollaboratorActivity = { id:string; taskId:string|null; summary:string; createdAt:string };
+export type CollaboratorSpaceData = { collaborator:{id:string;name:string;initials:string;jobTitle:string|null}; today:string; tasks:CollaboratorTask[]; activities:CollaboratorActivity[] };

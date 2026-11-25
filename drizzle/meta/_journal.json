@@ -1,0 +1,41 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1795080204173,
+      "tag": "0000_initial_planoria_schema",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1795080300118,
+      "tag": "0001_correct_project_constraints",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1795442526221,
+      "tag": "0002_little_obadiah_stane",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1795442830459,
+      "tag": "0003_watery_james_howlett",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1795528802435,
+      "tag": "0004_little_swordsman",
+      "breakpoints": true
+    }
+  ]
+}
